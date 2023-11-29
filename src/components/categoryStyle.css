@@ -1,0 +1,23 @@
+.categorys {
+  border-radius: 20px;
+  height: 165px;
+  width: 185px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+.genre-name {
+  margin-top: 2px;
+  margin-left: 5px;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.genre-name::first-letter {
+  text-transform: capitalize;
+}
