@@ -56,6 +56,9 @@
   border-radius: 12px;
   height: 220px;
   margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .user-info > img {
   background-color: transparent;

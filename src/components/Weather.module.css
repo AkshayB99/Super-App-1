@@ -58,7 +58,7 @@
   align-items: center;
 }
 .temperature{
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 100;
 }
 .wetherIcon{
@@ -75,7 +75,7 @@
   height: 17px;
 }
 .Text{
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 100;
 }
 .windCont{
@@ -90,7 +90,7 @@
 }
 .humi{
   display: flex;
-  margin-top: 5px;
+  margin-top: 12px;
 }
 .humidityIcon{
   width: 16px;
