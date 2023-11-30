@@ -1,0 +1,100 @@
+.upper {
+  background-color: #ff4ade;
+  border-radius: 12px 12px 0 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+}
+.upperData {
+  display: flex;
+  align-items: center;
+  margin: 0px 40px;
+  font-size: 25px;
+}
+.data {
+  margin-left: 60px;
+}
+.time {
+  margin-left: 90px;
+}
+
+.lower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-family: Roboto;
+}
+.condition{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.temp{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.humidity{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 2px;
+    height: 60px;
+    background-color: white;
+}
+.conditionContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.temperature{
+  font-size: 40px;
+  font-weight: 100;
+}
+.wetherIcon{
+  width: 60px;
+  height: 60px;
+}
+.mbar{
+  display: flex;
+}
+.tempIcon{
+  margin-top: 10px;
+  margin-right: 7px;
+  width: 10px;
+  height: 17px;
+}
+.Text{
+  font-size: 14px;
+  font-weight: 100;
+}
+.windCont{
+  display: flex;
+  font-size: 18px;
+}
+.windIcon{
+  width: 25px;
+  height: 20px;
+  margin-right: 5px;
+  margin-top: 7px;
+}
+.humi{
+  display: flex;
+  margin-top: 5px;
+}
+.humidityIcon{
+  width: 16px;
+  height: 22px;
+  margin-right: 5px;
+  margin-top: 7px;
+}

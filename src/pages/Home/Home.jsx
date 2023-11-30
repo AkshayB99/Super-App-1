@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import userImg from "../../assets/user.png";
+import Weather from "../../components/Weather";
 
 function Home() {
   const user = JSON.parse(localStorage.getItem("userData"));
@@ -29,7 +30,9 @@ function Home() {
           </div>
           <div className="all-notes">group2</div>
           <div className="newsinfo">group3</div>
-          <div className="weather">weather</div>
+          <div className="weather">
+            <Weather />
+          </div>
           <div className="timer">group5</div>
           <button className="browseBtn">Browse</button>
         </div>
