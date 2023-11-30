@@ -1,93 +1,138 @@
 .bg-color{
-    height: 100vh;
-    background-color: black;
-    color: white;
-  }
-  .main-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Fix the grid-template-columns value */
-    grid-template-rows: 3, 1fr; /* Fix the grid-template-rows value */
-    grid-template-areas:
-      "group1 group2 group3"
-      "group4 group2 group3"
-      "group5 group5 group3";
-    gap: 26px 40px;
-    height: 100%;
-    margin: 0px 120px;
-  }
-  .user-info {
-    grid-area: group1;
-    background-color: #5746ea;
-    height: 220px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    width: 420px;
-  }
-  .all-notes {
-    grid-area: group2;
-    background-color: #f1c75b;
-    border-radius: 12px;
-    margin-top: 20px;
-  }
-  .info-about {
-    grid-area: group3;
-    background-color: #fff;
-    border-radius: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .weather {
-    grid-area: group4;
-    background-color: #101744;
-    border-radius: 12px;
-    height: 160px;
-  }
-  .timer {
-    grid-area: group5;
-    background-color: #1e2343;
-    border-radius: 12px;
-    height: 220px;
-    margin-bottom: 20px;
-  }
-  .user-info > img {
-    background-color: transparent;
-    height: 200px;
-    margin-left: 10px;
-  }
-  .user-info-right{
-    display: flex;
-    flex-direction: column;
-    background-color: #5746ea;
-  }
-  .user-details {
-    margin-left: 20px; /* Adjust the margin as needed */
-  }
-  .user {
-    background-color: #5746ea;
-    font-family: Roboto;
-    font-size: 17px;
-    font-weight: 100;
-    margin-bottom: 5px;
-  }
-  .user-name{
-    background-color: #5746ea;
-    font-family: Roboto;
-    font-size: 22px;
-    font-weight: 100;
-  }
-  .catSelected{
-    margin: 20px 0px 0px 10px;
-    background-color: #5746ea;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 10px;
-  }
-  .cat{
-    background-color: #9F94FF;
-    margin: 0 5px;
-    padding: 5px 12px;
-    border-radius: 26px;
-  }
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 0.9fr; /* Fix the grid-template-columns value */
+  grid-template-rows: 3, 1fr; /* Fix the grid-template-rows value */
+  grid-template-areas:
+    "group1 group2 group3"
+    "group4 group2 group3"
+    "group5 group5 group3";
+  gap: 0px 20px;
+  height: 100%;
+  margin: 0px 160px;
+}
+.user-info {
+  grid-area: group1;
+  background-color: #5746ea;
+  height: 200px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  /* width: 420px; */
+}
+.all-notes {
+  grid-area: group2;
+  background-color: #f1c75b;
+  border-radius: 12px;
+  margin-top: 20px;
+  height: 385px;
   
+}
+.newsinfo {
+  grid-area: group3;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 610px;
+}
+.weather {
+  grid-area: group4;
+  background-color: #101744;
+  border-radius: 12px;
+  height: 160px;
+}
+.timer {
+  grid-area: group5;
+  background-color: #1e2343;
+  border-radius: 12px;
+  height: 220px;
+  margin-bottom: 60px;
+}
+.user-info > img {
+  background-color: transparent;
+  height: 180px;
+  margin-left: 10px;
+}
+.user-info-right{
+  display: flex;
+  flex-direction: column;
+  background-color: #5746ea;
+}
+.user-details {
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+.user {
+  background-color: #5746ea;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+.user-name{
+  background-color: #5746ea;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 100;
+}
+.catSelected{
+  margin: 20px 0px 0px 10px;
+  background-color: #5746ea;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+}
+.cat{
+  background-color: #9F94FF;
+  margin: 0 5px;
+  padding: 5px 12px;
+  border-radius: 26px;
+}
+.notesText {
+  width: 100%;
+  height: 350px;
+  resize: none; /* Disable textarea resizing */
+  border: none; /* Remove default border */
+  padding: 20px 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Include padding and border in the total width/height */
+  background-color: transparent; /* Make the background transparent */
+  outline: none; /* Remove the default outline */
+  overflow-y: auto; /* Add a vertical scrollbar if the content exceeds the height */
+  color: black; /* Text color */
+  font-size: 16px; /* Adjust the font size as needed */
+  
+}
+.notesHeading{
+  margin: 20px 0px 0px 30px;
+  color: black;
+}
+.notesText::-webkit-scrollbar {
+  width: 12px;
+}
+
+.notesText::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 254, 254, 0.7);
+  border-radius: 12px;
+}
+
+
+.browseBtn{
+  position: absolute;
+  right: 200px;
+  bottom: 25px;
+  background-color: #148A08;
+  color: white;
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 16px;
+}
