@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-import "./Entertainment.css";
+import "./SelectCategory.css";
 import Category from "../../components/Category";
 import err from "../../assets/error.png";
 
-function Entertainment() {
+function SelectCategory() {
   const navigate = useNavigate();
   const genres = [
     { id: 1, name: "action", color: "#ff5209" },
@@ -99,4 +99,4 @@ function Entertainment() {
   );
 }
 
-export default Entertainment;
+export default SelectCategory;

@@ -29,13 +29,21 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="all-notes">group2</div>
-          <div className="newsinfo">
-            <News />
+          <div className="all-notes">
+            <div>
+              <h2 className="notesHeading">All notes</h2>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                className="notesText"
+                placeholder="Write something here"
+              ></textarea>
+            </div>
           </div>
-          <div className="weather">
-            <Weather />
-          </div>
+          <div className="newsinfo">{/* <News /> */}</div>
+          <div className="weather">{/* <Weather /> */}</div>
           <div className="timer">group5</div>
           <button className="browseBtn">Browse</button>
         </div>
