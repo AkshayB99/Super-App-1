@@ -3,6 +3,7 @@ import "./Home.css";
 import userImg from "../../assets/user.png";
 import Weather from "../../components/Weather";
 import News from "../../components/News";
+import Timer from "../../components/Timer";
 
 function Home() {
   const user = JSON.parse(localStorage.getItem("userData"));
@@ -44,7 +45,9 @@ function Home() {
           </div>
           <div className="newsinfo">{/* <News /> */}</div>
           <div className="weather">{/* <Weather /> */}</div>
-          <div className="timer">group5</div>
+          <div className="timer">
+            <Timer />
+          </div>
           <button className="browseBtn">Browse</button>
         </div>
       </div>
