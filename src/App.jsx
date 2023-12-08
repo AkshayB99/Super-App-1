@@ -3,7 +3,7 @@ import Category from "./pages/category/SelectCategory.jsx";
 
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx";
-import Entertainments from "./pages/entertainment/Entertainments.jsx";
+import Entertainment from "./pages/entertainment/Entertainments.jsx";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/" element={<Registration />} />
         <Route path="/select" element={<Category />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/entertainment" element={<Entertainments />} />
+        <Route path="/entertainment" element={<Entertainment />} />
       </Routes>
     </>
   );
