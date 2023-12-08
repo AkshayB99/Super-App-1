@@ -4,10 +4,13 @@ import userImg from "../../assets/user.png";
 import Weather from "../../components/Weather";
 import News from "../../components/News";
 import Timer from "../../components/Timer";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const user = JSON.parse(localStorage.getItem("userData"));
   const catSelection = JSON.parse(localStorage.getItem("selectedGenre"));
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -48,7 +51,12 @@ function Home() {
           <div className="timer">
             <Timer />
           </div>
-          <button className="browseBtn">Browse</button>
+          <button
+            className="browseBtn"
+            onClick={() => navigate("/entertainment")}
+          >
+            Browse
+          </button>
         </div>
       </div>
     </>
