@@ -25,9 +25,9 @@ const Entertainments = () => {
                   </p>
                 </div>
               </div>
-              {/* <div onClick={() => navigate('/home')}>
+              <div onClick={() => navigate('/home')}>
                 <img src={user2} />
-              </div> */}
+              </div>
             </div>
             <div className={entCss.movies}>
               {localData.map((data) => {
