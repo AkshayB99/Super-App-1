@@ -46,8 +46,12 @@ function Home() {
               ></textarea>
             </div>
           </div>
-          <div className="newsinfo">{/* <News /> */}</div>
-          <div className="weather">{/* <Weather /> */}</div>
+          <div className="newsinfo">
+            <News />
+          </div>
+          <div className="weather">
+            <Weather />
+          </div>
           <div className="timer">
             <Timer />
           </div>
