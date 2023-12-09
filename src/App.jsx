@@ -1,4 +1,4 @@
-import Registration from "./pages/registration/Registration.jsx";
+import Registration from "/src/pages/registration/Registration.jsx";
 import Category from "./pages/category/SelectCategory.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Entertainment from "./pages/entertainment/Entertainments.jsx";
